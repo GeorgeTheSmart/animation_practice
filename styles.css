@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+} 
+
+
+#page1{
+    position: relative;
+    margin-top: -22.2vw;
+    height: 250vh;
+    width: 100% !important;
+    background-image: url(https://www.brandium.nl/wp-content/uploads/2023/09/bran-hero1-scaled.jpg);
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+
+
+#logo{
+    fill: #fff;
+    height: 9vw;
+    width: 3.9vw;
+    position: fixed !important;
+    z-index: 9999;
+    left: 2%;
+    top: 9.5%;
+    mix-blend-mode: difference;
+}
+
+#title-div{
+    width: 65vw;
+    position: absolute;
+    font-size: 8.8vw;
+    top: 5.6vw;
+    left: 5vw;
+    letter-spacing: -4px;
+    word-spacing: -4.56vw;
+}
+
+#title-div h1{
+    height: 1vw;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color: white;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-div span{
+    margin-top: -3vw;
+    margin-bottom: -2vw;
+}
+
+a, li{
+    text-decoration: none !important;
+    color: #fff;
+}
+
+#email-sec{
+    rotate: 270deg;
+    position: fixed !important;
+    top: 60%;
+    font-size: 2vw;
+    left: -10%;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 9999 !important;
+}
+
+#right-sec{
+    mix-blend-mode: difference;
+    position: fixed !important;
+    z-index: 9999 !important;
+    top: 3vw;
+    color: #fff;
+    right: 4%;
+    font-size: 2vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}   
+
+.yel-head{
+    color: #C3E507;
+}
+
+#page2{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    bottom: 21vw;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    padding-top: 18vw;
+    background-color: black;
+    color: #fff;
+}
+
+.yel-head{
+    font-size: 1.5vw;
+}
+
+#page2 p{
+    font-family:  "Roboto", serif;
+    margin-top: 1vw;
+    padding-left: 1vw;
+    font-size: 4.8vw;
+    width: 90.1vw;
+    font-weight: 390;
+    margin-bottom: 3vw;
+}
+
+#link-cont{
+    margin-left: 0vw;
+    background-color: #fff;
+    width: 19vw;
+    height: 10vh;
+    border-radius: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6vw;
+    gap: 20px;
+    margin-top: 6vw;
+}
+
+.hide-arr{
+    display: none;
+}
+
+
+.hide-green-ball{
+    display: none;
+}
+
+#svg-div{
+    position: relative;
+    height: 20px;
+    width: 16px;
+}
+
+.show-arr{
+    position: absolute;
+    width: 100%;
+    #svg-div{
+        overflow: hidden !important;
+    }
+}
+
+.green-ball{
+    width: 20px !important;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9FF06;
+}

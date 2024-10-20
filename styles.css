@@ -117,7 +117,7 @@ a, li{
     margin-bottom: 3vw;
 }
 
-#link-cont{
+.link-cont{
     margin-left: 0vw;
     background-color: #fff;
     width: 19vw;
@@ -143,21 +143,68 @@ a, li{
 
 #svg-div{
     position: relative;
+    /* top: 3px; */
     height: 20px;
     width: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .show-arr{
     position: absolute;
     width: 100%;
-    #svg-div{
-        overflow: hidden !important;
-    }
+    animation: arrow 1s infinite;
+    overflow: hidden;
+}
+
+.arr-2{
+    top: -10px;
+    left: 10px;
+    /* animation: arrow2 2s infinite; */
+}
+
+.arr-3{
+    top: 15px;
+    left: -10px;
+}
+
+.arr-1{
+    top: 35px;
+    left: -25px;
+}
+
+.link-hov{
+    margin-left: 0vw;
+    width: 19vw;
+    height: 10vh;
+    border-radius: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6vw;
+    gap: 20px;
+    margin-top: 6vw;
+    background-color: #d9ff06;
 }
 
 .green-ball{
-    width: 20px !important;
-    height: 20px;
+    /* position: absolute; */
+    padding-top: 10px;
+    width: 16px !important;
+    height: 16px;
     border-radius: 50%;
     background-color: #D9FF06;
 }
+
+@keyframes arrow {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(25px,-35px);
+    }    
+}
+
